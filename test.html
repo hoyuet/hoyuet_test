@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>测试hoyuet_common.js</title>
+		<script src="hoyuet_common.js" type="text/javascript" charset="utf-8"></script>
+		<script src="jquery-2.1.4.min.js" type="text/javascript" charset="utf-8"></script>
+		<script type="text/javascript">
+			$(function(){
+				$.ajax({
+					type:"post",
+					url:"data.json",
+					success:function(res){
+						console.log(res)
+					}
+				});
+			});
+			
+		</script>
+	</head>
+	<body>
+		<div class="container">
+			<h3>请选择</h3>
+			<div class="select">
+				<label>星期一</label>
+				<input type="checkbox" checked value="星期一" />
+				
+				<label>星期二</label>
+				<input type="checkbox" value="星期二" />
+				
+				<label>星期三</label>
+				<input type="checkbox" value="星期三" />
+				
+				<label>星期四</label>
+				<input type="checkbox" checked value="星期四" />
+				
+				<label>星期五</label>
+				<input type="checkbox" value="星期五" />
+				
+				<label>星期六</label>
+				<input type="checkbox" value="星期六" />
+				
+				<label>星期日</label>
+				<input type="checkbox" value="星期日"/>
+			</div>
+			<button>查询</button>
+			<table>
+				
+			</table>
+		</div>
+	</body>
+</html>
